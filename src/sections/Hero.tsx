@@ -56,7 +56,7 @@ const Hero = () => {
                     <FontAwesomeIcon size="xl" icon={faLinkedin} />
                   </Button>
                 }
-                tooltip={"Linkedin"}
+                tooltip={"LinkedIn"}
               />
               <Tooltip
                 elementToHover={
