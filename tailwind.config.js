@@ -10,6 +10,14 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      colors: {
+        black: "#020202",
+        green: "#62aba1",
+        purple: "#A682FF",
+        yellow: "#F4E76E",
+        orange: "#FCA17D",
+        offWhite: "#FFFDF7",
+      },
       fontSize: {
         xs: "0.75rem",
         sm: "0.875rem",
@@ -39,6 +47,8 @@ module.exports = {
       },
       screens: {
         m1000: { raw: "(max-width: 1000px)" },
+        // set medium breakpoint to 940px
+
         m900: { raw: "(max-width: 900px)" },
         m850: { raw: "(max-width: 850px)" },
         m800: { raw: "(max-width: 800px)" },

@@ -1,9 +1,11 @@
 import Hero from "./sections/Hero";
+// import Projects from "./sections/Projects";
 
 function App() {
   return (
-    <div className="flex flex-col h-screen w-full items-center justify-center">
+    <div className="flex flex-col w-full justify-start bg-offWhite">
       <Hero />
+      {/* <Projects /> */}
     </div>
   );
 }

@@ -5,7 +5,7 @@ import Marquee from "../components/Marquee";
 
 const Projects = () => {
   return (
-    <div>
+    <div className="flex flex-col w-full h-screen">
       <h1>Projects</h1>
       <div className="flex flex-row w-full space-x-4">
         <ImageCard
