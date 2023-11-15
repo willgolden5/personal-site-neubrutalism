@@ -1,7 +1,4 @@
-import Button from "../components/Button";
-import Dropdown from "../components/Dropdown";
 import ImageCard from "../components/ImageCard";
-import Marquee from "../components/Marquee";
 
 const Projects = () => {
   return (
