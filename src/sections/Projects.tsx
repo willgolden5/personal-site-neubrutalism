@@ -13,7 +13,7 @@ const Projects = forwardRef<HTMLDivElement, {}>((_props, ref) => {
 
         <div className="flex flex-col md:flex-row w-full justify-center items-center md:items-stretch space-y-6 md:space-y-0 md:space-x-12">
           <ImageCard
-            imageUrl="../../public/blackboxLogo.png"
+            imageUrl="/blackboxLogo.png"
             children={
               <>
                 <p className="border-t-2 border-black text-md p-4 font-light text-center">
