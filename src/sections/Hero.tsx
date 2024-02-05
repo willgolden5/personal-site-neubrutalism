@@ -10,21 +10,25 @@ import Tooltip from "../components/Tooltip";
 import Button from "../components/Button";
 import Avatar from "../components/Avatar";
 import Badge from "../components/Badge";
+import { forwardRef } from "react";
 
-const Hero = () => {
+const Hero = forwardRef<HTMLDivElement, {}>((props, ref) => {
   return (
-    <div className="flex flex-col h-screen w-full items-center justify-center">
+    <div
+      ref={ref}
+      className="flex flex-col h-screen w-full items-center justify-center"
+    >
       <div className="md:w-[940px]">
         <div className="flex p-4">
           <div className="">
-            <h3 className="text-2xl pb-[16px]">Hey! I'm Will.</h3>
+            <h3 className="text-3xl pb-[.5em]">Hey! I'm Will.</h3>
             <h1 className="font-bold text-5xl pb-[16px]">
               I'm a fullstack web developer.
             </h1>
             <p className="text-2xl">
               I'm currently the Director of Engineering at{" "}
               <a className="relative z-2" href="https://suturehealth.com">
-                Suture Health{" "}
+                Suture Health
                 <span className="absolute bottom-1 left-0 w-full h-[20%] md:h-[25%] bg-purple opacity-30 z-1 rounded-sm"></span>
               </a>
               .
@@ -93,6 +97,5 @@ const Hero = () => {
       </div>
     </div>
   );
-};
-
+});
 export default Hero;
