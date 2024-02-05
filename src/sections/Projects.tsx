@@ -7,7 +7,7 @@ import { forwardRef } from "react";
 
 const Projects = forwardRef<HTMLDivElement, {}>((_props, ref) => {
   return (
-    <div ref={ref} className="flex flex-col w-full h-screen">
+    <div ref={ref} className="flex flex-col w-full h-screen pt-8">
       <div className="flex flex-col align-middle justify-center w-full text-left space-y-8">
         <p className="font-bold text-4xl px-10">Recent Projects</p>
 

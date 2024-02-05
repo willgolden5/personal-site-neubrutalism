@@ -9,9 +9,12 @@ const Navbar = ({ projectsRef, homeRef }: NavbarProps) => {
   const handleProjectsClick = () => {
     if (projectsRef.current) {
       const elementRect = projectsRef.current.getBoundingClientRect();
-      const absoluteElementTop = elementRect.top + window.screenY;
+      const absoluteElementTop = elementRect.top + window.scrollY;
       const middle =
-        absoluteElementTop - window.innerHeight / 2 + elementRect.height / 2;
+        absoluteElementTop -
+        window.innerHeight / 2 +
+        elementRect.height / 2 -
+        60;
       window.scrollTo({ top: middle, behavior: "smooth" });
     }
   };
