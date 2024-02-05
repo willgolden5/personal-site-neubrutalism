@@ -53,7 +53,7 @@ const Projects = forwardRef<HTMLDivElement, {}>((_props, ref) => {
             }
           />
           <ImageCard
-            imageUrl="../../public/planeLogo.jpg"
+            imageUrl="/planeLogo.jpg"
             children={
               <>
                 <p className="border-t-2 border-black font-light text-md p-4 text-center">
@@ -82,7 +82,7 @@ const Projects = forwardRef<HTMLDivElement, {}>((_props, ref) => {
             padding={false}
           />
           <ImageCard
-            imageUrl="../../public/qlsticoLogo.png"
+            imageUrl="/qlsticoLogo.png"
             children={
               <>
                 <p className="border-t-2 border-black font-light text-md p-4 text-center">
