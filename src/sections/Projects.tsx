@@ -5,7 +5,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Tooltip from "../components/Tooltip";
 import { forwardRef } from "react";
 
-const Projects = forwardRef<HTMLDivElement, {}>((props, ref) => {
+const Projects = forwardRef<HTMLDivElement, {}>((_props, ref) => {
   return (
     <div ref={ref} className="flex flex-col w-full h-screen">
       <div className="flex flex-col align-middle justify-center w-full text-left space-y-8">

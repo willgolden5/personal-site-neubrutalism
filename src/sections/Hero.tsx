@@ -12,7 +12,7 @@ import Avatar from "../components/Avatar";
 import Badge from "../components/Badge";
 import { forwardRef } from "react";
 
-const Hero = forwardRef<HTMLDivElement, {}>((props, ref) => {
+const Hero = forwardRef<HTMLDivElement, {}>((_props, ref) => {
   return (
     <div
       ref={ref}
