@@ -32,7 +32,7 @@ const Navbar = ({ projectsRef, homeRef }: NavbarProps) => {
     <nav className="fixed left-0 top-0 z-10 mx-auto flex h-20 w-full items-center border-b-4 border-black bg-white px-5 m500:h-16">
       <div className="mx-auto flex w-[1300px] max-w-full items-center justify-between">
         <a
-          className="text-3xl font-bold m500:text-xl"
+          className="text-3xl font-bold m500:text-xl capitalize"
           onClick={handleHomeClick}
         >
           GLDN
@@ -46,7 +46,12 @@ const Navbar = ({ projectsRef, homeRef }: NavbarProps) => {
             About
           </a> */}
           <a
-            target="_blank"
+            onClick={handleHomeClick}
+            className="flex items-center justify-center font-bold text-2xl m500:text-xl"
+          >
+            Home
+          </a>
+          <a
             onClick={handleProjectsClick}
             className="flex items-center justify-center font-bold text-2xl m500:text-xl"
           >
