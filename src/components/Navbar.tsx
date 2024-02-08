@@ -45,18 +45,18 @@ const Navbar = ({ projectsRef, homeRef }: NavbarProps) => {
           >
             About
           </a> */}
-          <a
+          <p
             onClick={handleHomeClick}
             className="flex items-center justify-center font-bold text-2xl m500:text-xl"
           >
             Home
-          </a>
-          <a
+          </p>
+          <p
             onClick={handleProjectsClick}
             className="flex items-center justify-center font-bold text-2xl m500:text-xl"
           >
             Projects
-          </a>
+          </p>
         </div>
       </div>
     </nav>
