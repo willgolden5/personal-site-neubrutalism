@@ -4,25 +4,42 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Tooltip from "../components/Tooltip";
 import { forwardRef } from "react";
+import Badge from "../components/Badge";
 
 const Projects = forwardRef<HTMLDivElement, {}>((_props, ref) => {
   return (
     <div ref={ref} className="flex flex-col w-full h-screen pt-8">
       <div className="flex flex-col align-middle justify-center w-full text-left space-y-8">
-        <p className="font-bold text-4xl px-10">Recent Projects</p>
+        <p className="font-bold text-4xl px-10">Projects</p>
 
         <div className="flex flex-col md:flex-row w-full justify-center items-center md:items-stretch space-y-6 md:space-y-0 md:space-x-12">
           <ImageCard
             imageUrl="/blackboxLogo.png"
             children={
               <>
-                <p className="border-t-2 border-black text-md p-4 font-light text-center">
-                  Blackbox is an algorithmic trading application that allows
-                  users to trade custom strategies without writing any code. I
-                  used Next.js, TypeScript, and Tailwind CSS for the client
-                  application and Nest.js, Typscript, Prisma, and PostgreSQL for
-                  the server application.
+                <p className="border-t-2 border-black text-lg px-4 pt-4 pb-2 font-semibold">
+                  About:
                 </p>
+                <p className=" text-md px-4 font-light text-center pb-2">
+                  Blackbox is an algorithmic trading application that allows
+                  users to trade custom strategies without writing any code.
+                </p>
+                <div className="px-4">
+                  <p className="pb-2 text-lg font-semibold">Technologies:</p>
+                  <div className="flex space-x-2 flex-wrap p-1 w-full align-middle justify-center pb-6">
+                    {[
+                      { badgeText: "Next.js", color: "#A682FF" },
+                      { badgeText: "Nest.js", color: "#F4E76E" },
+                      { badgeText: "TypeScript", color: "#A682FF" },
+                      { badgeText: "TailwindCSS", color: "#F4E76E" },
+                      { badgeText: "Prisma", color: "#62aba1" },
+                      { badgeText: "tRPC", color: "#F4E76E" },
+                      { badgeText: "Postgres", color: "#A682FF" },
+                    ].map(({ badgeText, color }, index) => (
+                      <Badge key={index} badgeText={badgeText} color={color} />
+                    ))}
+                  </div>
+                </div>
                 <div className="flex justify-center pb-4">
                   <Tooltip
                     elementToHover={
@@ -56,13 +73,30 @@ const Projects = forwardRef<HTMLDivElement, {}>((_props, ref) => {
             imageUrl="/planeLogo.jpg"
             children={
               <>
-                <p className="border-t-2 border-black font-light text-md p-4 text-center">
+                <p className="border-t-2 border-black text-lg px-4 pt-4 pb-2 font-semibold">
+                  About:
+                </p>
+                <p className=" text-md px-4 font-light text-center pb-2">
                   Flight plan is an hour sharing application that allows
                   licensed pilots to share the cost of flying with with other
-                  licensed pilots in an FAA compliant manner. I used Next.js,
-                  TypeScript, and Chakra UI for the client application and Go
-                  with Gin for the server application.
+                  licensed pilots in an FAA compliant manner.
                 </p>
+                <div className="px-4">
+                  <p className="pb-2 text-lg font-semibold">Technologies:</p>
+                  <div className="flex space-x-2 flex-wrap p-1 w-full align-middle justify-center pb-6">
+                    {[
+                      { badgeText: "Next.js", color: "#A682FF" },
+                      { badgeText: "TypeScript", color: "#A682FF" },
+                      { badgeText: "ChakraUI", color: "#F4E76E" },
+                      { badgeText: "tRPC", color: "#F4E76E" },
+                      { badgeText: "Prisma", color: "#62aba1" },
+                      { badgeText: "Go", color: "#F4E76E" },
+                      { badgeText: "Gin", color: "#A682FF" },
+                    ].map(({ badgeText, color }, index) => (
+                      <Badge key={index} badgeText={badgeText} color={color} />
+                    ))}
+                  </div>
+                </div>
                 <div className="flex justify-center pb-4 space-x-4">
                   <Tooltip
                     elementToHover={
@@ -85,11 +119,27 @@ const Projects = forwardRef<HTMLDivElement, {}>((_props, ref) => {
             imageUrl="/qlsticoLogo.png"
             children={
               <>
-                <p className="border-t-2 border-black font-light text-md p-4 text-center">
+                <p className="border-t-2 border-black text-lg px-4 pt-4 pb-2 font-semibold">
+                  About:
+                </p>
+                <p className=" text-md px-4 font-light text-center pb-2">
                   An easy-to-use desktop application that redefines Postgres
                   database access and visualization through an intuitive UI and
                   the power of GraphQL. Built with Electron.
                 </p>
+                <div className="px-4">
+                  <p className="pb-2 text-lg font-semibold">Technologies:</p>
+                  <div className="flex space-x-2 flex-wrap p-1 w-full align-middle justify-center pb-6">
+                    {[
+                      { badgeText: "Electron", color: "#A682FF" },
+                      { badgeText: "MaterialUI", color: "#F4E76E" },
+                      { badgeText: "GraphQL", color: "#F4E76E" },
+                      { badgeText: "Prisma", color: "#62aba1" },
+                    ].map(({ badgeText, color }, index) => (
+                      <Badge key={index} badgeText={badgeText} color={color} />
+                    ))}
+                  </div>
+                </div>
                 <div className="flex justify-center space-x-4">
                   <Tooltip
                     elementToHover={
@@ -110,7 +160,7 @@ const Projects = forwardRef<HTMLDivElement, {}>((_props, ref) => {
         </div>
         <a
           href="https://github.com/willgolden5"
-          className="cursor-pointer flex w-full justify-center"
+          className="cursor-pointer flex w-full justify-center pt-4"
         >
           <h3 className="font-thin text-lg pb-4">
             Check out my other projects on{" "}
