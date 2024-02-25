@@ -27,7 +27,7 @@ const Hero = forwardRef<HTMLDivElement, {}>((_props, ref) => {
               I build things that last.
             </h1>
             <p className="text-xl">
-              I'm a fullstack web developer with a passion for building
+              I'm a senior fullstack web developer with a passion for building
               performant applications. I'm currently Director of Engineering at{" "}
               <a className="relative z-2" href="https://suturehealth.com">
                 Suture Health
