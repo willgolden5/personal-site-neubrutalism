@@ -40,7 +40,7 @@ const Projects = forwardRef<HTMLDivElement, {}>((_props, ref) => {
                     ))}
                   </div>
                 </div>
-                <div className="flex justify-center pb-4">
+                <div className="flex justify-center pb-4 space-x-4">
                   <Tooltip
                     elementToHover={
                       <a href="https://github.com/willgolden5/blackbox-react">
@@ -52,6 +52,10 @@ const Projects = forwardRef<HTMLDivElement, {}>((_props, ref) => {
                       </a>
                     }
                     tooltip={"Github"}
+                    margin={{
+                      bottom: "mb-2",
+                      left: "-ml-4",
+                    }}
                   />
                   <Tooltip
                     elementToHover={
@@ -64,6 +68,10 @@ const Projects = forwardRef<HTMLDivElement, {}>((_props, ref) => {
                       </a>
                     }
                     tooltip={"Website"}
+                    margin={{
+                      bottom: "mb-2",
+                      left: "-ml-4",
+                    }}
                   />
                 </div>
               </>
@@ -77,9 +85,10 @@ const Projects = forwardRef<HTMLDivElement, {}>((_props, ref) => {
                   About:
                 </p>
                 <p className=" text-md px-4 font-light text-center pb-2">
-                  Flight plan is an hour sharing application that allows
+                  Flight Plan is an hour sharing application that allows
                   licensed pilots to share the cost of flying with with other
-                  licensed pilots in an FAA compliant manner.
+                  licensed pilots for the purpose of building hours in an FAA
+                  compliant manner.
                 </p>
                 <div className="px-4">
                   <p className="pb-2 text-lg font-semibold">Technologies:</p>
@@ -97,7 +106,7 @@ const Projects = forwardRef<HTMLDivElement, {}>((_props, ref) => {
                     ))}
                   </div>
                 </div>
-                <div className="flex justify-center pb-4 space-x-4">
+                <div className="flex justify-center pb-4">
                   <Tooltip
                     elementToHover={
                       <a href="https://www.flightplan.tech/">
@@ -109,6 +118,10 @@ const Projects = forwardRef<HTMLDivElement, {}>((_props, ref) => {
                       </a>
                     }
                     tooltip={"Website"}
+                    margin={{
+                      bottom: "mb-2",
+                      left: "-ml-5",
+                    }}
                   />
                 </div>
               </>
@@ -123,9 +136,9 @@ const Projects = forwardRef<HTMLDivElement, {}>((_props, ref) => {
                   About:
                 </p>
                 <p className=" text-md px-4 font-light text-center pb-2">
-                  An easy-to-use desktop application that redefines Postgres
-                  database access and visualization through an intuitive UI and
-                  the power of GraphQL. Built with Electron.
+                  QLstico is an easy-to-use desktop application that redefines
+                  Postgres database access and visualization through an
+                  intuitive UI and the power of GraphQL. Built with Electron.
                 </p>
                 <div className="px-4">
                   <p className="pb-2 text-lg font-semibold">Technologies:</p>
@@ -140,7 +153,7 @@ const Projects = forwardRef<HTMLDivElement, {}>((_props, ref) => {
                     ))}
                   </div>
                 </div>
-                <div className="flex justify-center space-x-4">
+                <div className="flex justify-center pb-4">
                   <Tooltip
                     elementToHover={
                       <a href="https://github.com/qlstico/parcelQL">
@@ -152,6 +165,10 @@ const Projects = forwardRef<HTMLDivElement, {}>((_props, ref) => {
                       </a>
                     }
                     tooltip={"Github"}
+                    margin={{
+                      bottom: "mb-2",
+                      left: "-ml-4",
+                    }}
                   />
                 </div>
               </>

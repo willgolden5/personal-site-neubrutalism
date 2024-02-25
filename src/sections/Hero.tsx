@@ -1,11 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
+  faGolang,
   faLinkedin,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import { faFile } from "@fortawesome/free-regular-svg-icons";
-import { faCaretDown, faChartLine } from "@fortawesome/free-solid-svg-icons";
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import Tooltip from "../components/Tooltip";
 import Button from "../components/Button";
 import Avatar from "../components/Avatar";
@@ -21,19 +22,20 @@ const Hero = forwardRef<HTMLDivElement, {}>((_props, ref) => {
       <div className="md:w-[940px]">
         <div className="flex p-4">
           <div className="">
-            <h3 className="text-3xl pb-[.5em]">Hey! I'm Will.</h3>
+            <h3 className="text-3xl pb-[.2em]">Hey! I'm Will.</h3>
             <h1 className="font-bold text-5xl pb-[16px]">
-              I'm a fullstack web developer.
+              I build things that last.
             </h1>
-            <p className="text-2xl">
-              I'm currently the Director of Engineering at{" "}
+            <p className="text-xl">
+              I'm a fullstack web developer with a passion for building
+              performant applications. I'm currently Director of Engineering at{" "}
               <a className="relative z-2" href="https://suturehealth.com">
                 Suture Health
-                <span className="absolute bottom-1 left-0 w-full h-[20%] md:h-[25%] bg-purple opacity-30 z-1 rounded-sm"></span>
+                <span className="absolute bottom-1 left-0 w-full h-[20%] md:h-[18%] bg-purple opacity-30 z-1 rounded-sm"></span>
               </a>
               .
             </p>
-            <div className="flex pt-10 space-x-2">
+            <div className="flex pt-10 space-x-6">
               <Tooltip
                 elementToHover={
                   <Button
@@ -74,24 +76,28 @@ const Hero = forwardRef<HTMLDivElement, {}>((_props, ref) => {
               />
             </div>
           </div>
-          <div className="relative hidden md:flex w-full justify-center items-center">
-            <div className="absolute top-5 right-24">
-              <Badge badgeText="Me" />
-            </div>
-            <div className="absolute top-12 right-36 rotate-[39deg]">
-              <FontAwesomeIcon size="lg" icon={faCaretDown} />
-            </div>
-            <div className="absolute top-12 z-99 left-36 bg-[#62aba1] p-2 border-2 border-black rounded-md shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none">
-              <FontAwesomeIcon size="2xl" icon={faChartLine} />
-            </div>
-            <div className="absolute bottom-12 z-99 right-32 bg-[#F4E76E] p-2 border-2 border-black rounded-md shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none">
-              <FontAwesomeIcon
-                className="animate-spin-slow"
-                size="2xl"
-                icon={faReact}
-              />
-            </div>
-            <Avatar imageUrl="https://i.imgur.com/t4w3vfK.png" />
+          <div className="hidden md:flex w-full justify-center items-center">
+            <Avatar
+              styles="relative"
+              imageUrl="https://i.imgur.com/t4w3vfK.png"
+            >
+              <div className="absolute left-[274px] bottom-[280px]">
+                <Badge badgeText="Will" fontSize="lg" />
+              </div>
+              <div className="absolute left-[260px] rotate-[39deg]">
+                <FontAwesomeIcon size="xl" icon={faCaretDown} />
+              </div>
+              <div className="absolute z-99 right-[240px] bg-[#F4E76E] p-2 border-2 border-black rounded-md shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none">
+                <FontAwesomeIcon
+                  className="animate-spin-slow"
+                  size="2xl"
+                  icon={faReact}
+                />
+              </div>
+              <div className="absolute bottom-1 z-99 left-[240px] bg-[#5188B8] p-2 border-2 border-black rounded-md shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none">
+                <FontAwesomeIcon size="2xl" icon={faGolang} />
+              </div>
+            </Avatar>
           </div>
         </div>
       </div>
