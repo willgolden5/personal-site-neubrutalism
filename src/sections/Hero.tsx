@@ -22,7 +22,7 @@ const Hero = forwardRef<HTMLDivElement, {}>((_props, ref) => {
       <div className="md:w-[940px]">
         <div className="flex p-4">
           <div className="">
-            <h3 className="text-3xl pb-[.2em]">Hey! I'm Will.</h3>
+            <h3 className="text-3xl pb-[.2em]">Hey! I'm Will Golden.</h3>
             <h1 className="font-bold text-5xl pb-[16px]">
               I build things that last.
             </h1>
